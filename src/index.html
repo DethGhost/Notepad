@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="some.js" type="application/javascript" ></script>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <title>Notepad</title>
+</head>
+<body>
+<header>
+    <h1> Notepad  -  LocalStorage on jQuery</h1>
+</header>
+<section class="content">
+    <div class="left">
+        <div class="notepad">
+            <form id="form" action="#" method="POST">
+                <p>Enter title:</p>
+                <input id="title" name="title" type="text" maxlength="35"/>
+                <br />
+                <div id="alertTitle"></div>
+                <p>Enter your description:</p>
+                <textarea id="description" name="description" type="text" maxlength="1000"></textarea>
+                <br />
+                <div id="alertDescription"></div>
+                <br />
+                <button id="add" type="submit">Add data</button>
+                <br />
+                <button id="clear">Clear</button>
+            </form>
+        </div>
+
+    </div>
+    <div class="right">
+        <h2>Note's</h2>
+        <ul id="list"></ul>
+        <span id="full"></span>
+    </div>
+</section>
+</body>
+</html>

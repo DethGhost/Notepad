@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, "Times New Roman", Verdana, SansSerif;
+}
+#alertDescription, #alertTitle{
+    color: red;
+}
+header{
+    color: aquamarine;
+    background-color: grey;
+    text-align: center;
+}
+.content{
+    wdith: 100%;
+    max-width: 1000px;
+    position: relative;
+    margin: 0 auto;
+}
+.left{
+    width: 100%;
+    max-width: 600px;
+    display: inline-block;
+    position: relative;
+    left: 0;
+
+}
+form{
+    display: block;
+}
+.right h2{
+    text-align: center;
+}
+.right li{
+    list-style: decimal;
+}
+.right{
+    width: 100%;
+    max-width: 400px;
+    display: inline-block;
+    position: absolute;
+}
