@@ -36,13 +36,15 @@ $(document).on('click', '#clear', function () {
 $(document).ready(function () {
     if (+localStorage.getItem('list') > 0) {
         for (var i = 1; i <= +localStorage.getItem('list'); i++) {
-            $('#list').prepend("<li id='note'>" + localStorage.getItem(i.toString()));
+            $('#list').prepend("<li id='" + localStorage.getItem(i.toString()) + "'>" + localStorage.getItem(i.toString()));
+            +"</li>"
             count = i;
         }
     }
     $("#list").click(function f(e) {
         e = e || window.event;
         var el = e.target || e.srcElement;
-        alert(el);
+        
+       $('#full').prepend(localStorage.getItem(el.id));
     });
 });
